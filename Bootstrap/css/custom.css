@@ -1,0 +1,33 @@
+body{
+	background-image: url(../images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover; 
+	background-color: #464646;
+}
+.btn-group{
+	margin: auto;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.btn{
+	font-size: 30px;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	font-color: rgba(109,104,104,1);
+	border: 1px solid rgba(109,104,104,1);
+	border-radius: 25px;
+}
+.item{
+	display: inline-block;
+	margin:auto; 
+	padding-bottom: 10px;
+}
+#content {
+	width: 900px;
+	margin: auto;
+	font: italic normal bold 20px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
