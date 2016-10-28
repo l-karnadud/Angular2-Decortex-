@@ -1,8 +1,14 @@
 body{
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bg2.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    /*background-position: center center;*/
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+}
+#mySpinner{
+    margin: auto;
+    text-align: center;
+    margin-left: 540px;
+    margin-top: 280px;
 }
