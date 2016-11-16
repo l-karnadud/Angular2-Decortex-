@@ -5,13 +5,17 @@
 
         <div class = "row">
             <br><br>
-            <!--<a ng-repeat="folder in folders | filter:query" href='#/gallery/{{folder.id}}'>
-                <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12 folder-container">
-                    <img class = "folder" src='{{folder.url}}' width=320 height=270>
-                    <div id = "folder-name">{{folder.name}}</div>
-                </div>
-            </a> -->
-            <img src="../../images/1.png">
+            <div *ngIf="folders_error">An error occurred while loading the folders!</div>
+            <ul>
+                <li *ngFor="let folder of folders" style= "font-color:red">{{folder.name}}</li>
+            </ul>
+            <!--<a *ngFor = "let folder of folders">
+
+                <!-- <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12 folder-container">
+                     <img class = "folder" src='{{folder.url}}' width=320 height=270>
+                     <div id = "folder-name">{{folder.name}}</div>
+                 </div>
+             </a> -->
         </div>
 
     </div>

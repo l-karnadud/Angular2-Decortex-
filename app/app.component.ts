@@ -1,9 +1,12 @@
 import {Component} from '@angular/core';
 import {ContactComponent} from './contacts/contacts.component';
-import {FoldersComponent} from './folders/folders.component'
-//import {ROUTER_DIRECTIVES} from '@angular/router';
-//import {RouteConfig} from '@angular/router';
+import {FoldersComponent} from './folders/folders.component';
+import {AppService} from './app.service';
 import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
+import {Http, Response} from '@angular/http';
+import {Observable} from 'rxjs/Rx';
+
+
 
 
 @Component({
@@ -17,11 +20,6 @@ import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
  {path: '/contacts', component: ContactComponent},
      {path: '/folders', component: FoldersComponent}
  ])
+
 export class AppComponent {
-   // title: string;
-
-    constructor(public router: Router) {
-
-
-    }
 }
